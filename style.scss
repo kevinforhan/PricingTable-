@@ -1,0 +1,19 @@
+$background-gradient: linear-gradient(to, left, #7275a4, #4a4872, #302d4a)
+
+html, body {
+    height: 100%; 
+}
+
+body {
+    margin: 0; 
+    padding: 0; 
+    background: $background-gradient; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.pricing-table {
+    
+}
