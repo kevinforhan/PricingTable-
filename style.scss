@@ -5,6 +5,7 @@ $orange-gradient: linear-gradient(135deg, #ca689e, #de8ca1, #dbbc88);
 
 $white: rgb(240, 240, 240); 
 $white-grey : rgba(209, 209, 0.7); 
+$grey:  rgb(163, 163, 163); 
 $black: rgb(15, 15, 15); 
 
 html, body { 
@@ -53,6 +54,23 @@ body {
               transform: translateX(-50%)
             }
         }
+
+        .price {
+            position: absolute; 
+            color: rgba($white-grey, 0.12); 
+            width: 100%; 
+            font-size: 350px;  
+            top: 30px; 
+            text-align: center; 
+            font-weight: 900;
+
+            span {
+                font-size: 50px; 
+                position: absolute; 
+                top: 60px; 
+                left: 10px; 
+            }
+        }
     }
 
    .individual {
@@ -63,7 +81,7 @@ body {
       background: $pink-gradient; 
    }
 
-   .unlimitied {
+   .unlimited {
      background: $orange-gradient; 
    }
 
@@ -103,9 +121,30 @@ body {
             content: ""; 
             background: $orange-gradient; 
             height: 100%; 
-            width: 50%; 
-
+            width: 50%;  
         }
     }
+  }
+  .continue {
+   display: flex; 
+   justify-content: center; 
+
+   button {
+       width: 80%; 
+       padding: 15px; 
+       border-radius: 25px; 
+       border: none; 
+       color: $grey;
+       font-size: 16px; 
+       display: flex; //add a flex box 
+       justify-content: center; //center it 
+       align-items: center; //align items within the box
+       box-shadow: 0 8px 12px 3px rgba($black, 0.2); //lift the button of the page 
+
+       img {
+           height: 12px; 
+           margin-left: 10px; 
+       }
+   }
   }
 }
