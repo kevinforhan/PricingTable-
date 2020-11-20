@@ -1,5 +1,9 @@
-$background-gradient: linear-gradient(to, left, #7275a4, #4a4872, #302d4a)
+$background-gradient: linear-gradient(to, left, #7275a4, #4a4872, #302d4a); 
+$blue-gradient: linear-gradient(135deg, #5464bf, #6a99ca, #6eb0be); 
+$pink-gradient: linear-gradient(135deg, #fa90a3, #d589d2, #bb8ae6); 
+$orange-gradient: linear-gradient(135deg, #ca689e, #de8ca1, #dbbc88); 
 
+$white: rgb(240, 240, 240)
 html, body {
     height: 100%; 
 }
@@ -15,5 +19,37 @@ body {
 }
 
 .pricing-table {
-    
+    display: flex; 
+    width: 800px; 
+    height: 450px; 
+
+
+    .individual, .shared, .umlimited {
+        flex: 1; 
+        height: 100%; 
+        color: $white;  
+        display: flex; 
+        flex-direction: column; 
+        justify-content: space-around;
+        position: relative;
+        border-radius: 12px; 
+
+
+        h2 {
+            text-align: center;
+            position: relative; 
+        }
+    }
+
+   .individual {
+      background: $blue-gradient; 
+   }
+
+   .shared {
+      background: $pink-gradient; 
+   }
+
+   .unlimitied {
+     background: $orange-gradient; 
+   }
 }
